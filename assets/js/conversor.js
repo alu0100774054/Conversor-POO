@@ -56,7 +56,7 @@ Celsius.prototype.toKelvin = function () {
 
   function Kelvin(valor)
   {
-    Temperatura.call(this, valor, "k");
+    Temperatura.call(this, valor);
   }
 
   Kelvin.prototype = new Temperatura();
@@ -82,7 +82,7 @@ Celsius.prototype.toKelvin = function () {
         elemento  = document.getElementById('converted'),
         /* Extienda la RegeExp a la especificación. use una XRegExp */
         regexp    = /^\s*([-+]?\d+(?:\.\d+)?(?:e[+-]?\d+)?)\s*([a-z,A-Z]+)\s*$/i;
-    valor     = valor.match(regexp);
+        valor     = valor.match(regexp);
 
     if (valor) {
       var numero = valor[1],
