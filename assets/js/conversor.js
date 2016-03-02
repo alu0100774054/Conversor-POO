@@ -98,14 +98,17 @@ Kelvin.prototype.toFarenheit = function () {
         case 'c':
           var celsius = new Celsius(numero);
           elemento.innerHTML = celsius.toFarenheit().toFixed(2) + " Farenheit";
+          elemento.innerHTML = celsius.toKelvin().toFixed(2) + " kelvins";
           break;
         case 'f':
           var farenheit = new Farenheit(numero);
           elemento.innerHTML = farenheit.toCelsius().toFixed(2) + " Celsius";
+          elemento.innerHTML = farenheit.toKelvin().toFixed(2) + " Kelvins";
           break;
         case 'k':
           var kelvin = new Kelvin(numero);
           elemento.innerHTML = kelvin.toCelsius().toFixed(2) + " Celsius";
+          elemento.innerHTML = kelvin.toFarenheit().toFixed(2) + " Farenheit";
           break;
 
         default:
