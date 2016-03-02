@@ -108,5 +108,5 @@ Celsius.prototype.toKelvin = function () {
     }
     else
       elemento.innerHTML = "";
-  };
+  }
 })(this);
