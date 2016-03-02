@@ -103,9 +103,15 @@ Kelvin.prototype.toFarenheit = function () {
           var farenheit = new Farenheit(numero);
           elemento.innerHTML = farenheit.toCelsius().toFixed(2) + " Celsius";
           break;
+        case 'k':
+          var kelvin = new Kelvin(numero);
+          elemento.innerHTML = kelvin.toCelsius().toFixed(2) + " Celsius";
+          break;
 
         default:
           elemento.innerHTML = "ERROR! Intenta algo como '23.2C' ";
+          /* rellene este código */
+
       }
     }
     else
