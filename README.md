@@ -2,7 +2,13 @@
 ##Alumnos
 ---
 ###Erik Andreas Barreto de Vera alu0100774054
+
+* [Pagina de usuario] http://alu0100774054.github.io/
+
 ###Jorge Alonso Hernandez alu0100767803
+
+* [Pagina de usuario] http://alu0100767803.github.io/
+
 ---
 ## Práctica 3: Conversor de medidas
 
