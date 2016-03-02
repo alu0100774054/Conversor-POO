@@ -11,29 +11,31 @@
 
   function Temperatura(valor,tipo)
   {
-    Media.call(this, valor, tipo);
+    Medida.call(this, valor, tipo);
+    //  this.tipo = tipo;
     /* tipo es opcional. Debería admitir new Medida("45.2 F") */
   }
 
-  Temperatura.prototype = new Medida();
-  Temperatura.prototype.constructor = Temperatura;
+Temperatura.prototype = new Medida();
+Temperatura.prototype.constructor = Temperatura;
+
 
   function Celsius(valor)
   {
-    Temperatura.call(this, valor);
+    Temperatura.call(this, valor)
   }
 
-  Celsius.prototype = new Temperatura();
-  Celsius.prototype.constructor = Celsius;
+Celsius.prototype = new Temperatura();
+Celsius.prototype.constructor = Celsius;
 
-  Celsius.prototype.toFarenheit = function () {
-    var result = (this.valor * 9/5)+32;
-    return result;
-  }
+Celsius.prototype.toFarenheit = function () {
+  var result = (this.valor * 9/5)+32;
+  return result;
+}
 
 Celsius.prototype.toKelvin = function () {
-    var result = this.valor + 273.15;
-    return result;
+  var result = this.valor + 273.15;
+  return result;
 }
 
   function Farenheit(valor)
@@ -41,36 +43,37 @@ Celsius.prototype.toKelvin = function () {
     Temperatura.call(this, valor);
   }
 
-  Farenheit.prototype = new Temperatura();
-  Farenheit.prototype.constructor = Farenheit;
+Farenheit.prototype = new Temperatura();
+Farenheit.prototype.constructor = Farenheit;
 
-  Farenheit.prototype.toCelsius = function () {
-    var result = (this.valor - 32) * 5/9;
-    return result;
-  }
+Farenheit.prototype.toCelsius = function () {
+  var result = (this.valor - 32) * 5/9;
+  return result;
+}
 
-  Farenheit.prototype.toKelvin = function () {
-    var result = ((this.valor - 32) / (9/5)) + 273.15;
-    return result;
-  }
+Farenheit.prototype.toKelvin = function () {
+  var result = ((this.valor - 32) / (9/5)) + 273.15;
+  return result;
+}
 
-  function Kelvin(valor)
-  {
-    Temperatura.call(this, valor);
-  }
+function Kelvin(valor)
+{
+  Temperatura.call(this, valor, "k");
+}
 
-  Kelvin.prototype = new Temperatura();
-  Kelvin.prototype.constructor = Kelvin;
+Kelvin.prototype = new Temperatura();
+Kelvin.prototype.constructor = Kelvin;
 
-  Kelvin.prototype.toCelsius = function () {
-    var result = this.valor - 273.15;
-    return result;
-  }
+Kelvin.prototype.toCelsius = function () {
+  var result = this.valor - 273.15;
+  return result;
+}
 
-  Kelvin.prototype.toFarenheit = function () {
-    var result = ((this.valor - 273.15) * 9/5) + 32;
-    return result;
-  }
+Kelvin.prototype.toFarenheit = function () {
+  var result = ((this.valor - 273.15) * 9/5) + 32;
+  return result;
+}
+
 
   exports.Temperatura = Temperatura;
   exports.Celsius = Celsius;
@@ -103,7 +106,6 @@ Celsius.prototype.toKelvin = function () {
 
         default:
           elemento.innerHTML = "ERROR! Intenta algo como '23.2C' ";
-          /* rellene este código */
       }
     }
     else
