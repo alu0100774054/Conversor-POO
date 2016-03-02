@@ -1,17 +1,23 @@
-# Práctica OOP en JS
+#Asignatura: Procesadores de Lenguajes
+##Alumnos
+---
+###Erik Andreas Barreto de Vera alu0100774054
+###Jorge Alonso Hernandez alu0100767803
+---
+## Práctica 3: Conversor de medidas
 
-Este repositorio aloja la práctica de conversión de tipos, realizada con html, css y javascript, usando POO y haciendo uso de la herencia en javascript.
+### Que aprendemos
 
++Este repositorio aloja la práctica de conversión de tipos, realizada con html, css y javascript, usando POO y haciendo uso de la herencia en javascript.
 
-**Repositorio GitHuB**
+### conversor
 
-* [Repositorio]()
+* [Conversor]http://alu0100774054.github.io/Conversor-POO
 
-**Página de la práctica**
+### Campus virtual de la Asignatura
 
-* [Web]()
+* [Campus virtual Procesadores de Lenguajes]https://campusvirtual.ull.es/1516/course/view.php?id=178
 
-**Página del autor**
+### Página de la Asignatura
 
-* [Web Author]()
-
+* [Página de la asignatura]http://alu0100774054.github.io/
